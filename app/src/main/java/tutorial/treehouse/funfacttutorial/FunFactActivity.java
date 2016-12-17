@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.sdsmdg.tastytoast.TastyToast;
+
 import java.util.Random;
 
 public class FunFactActivity extends AppCompatActivity {
@@ -64,6 +66,8 @@ public class FunFactActivity extends AppCompatActivity {
                 mBackgroudLayout.setBackgroundColor(COLORS[currNum]);            }
         };
         mNextFactBn.setOnClickListener(buttonListener);
+
+        TastyToast.makeText(getApplicationContext(), "Hello World !", TastyToast.LENGTH_LONG, TastyToast.SUCCESS);
 
     }
 }
